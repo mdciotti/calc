@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Calculator</title>
+        <meta name="viewport" width="device-width" content="initial-scale=1.0, user-scalable=no">
+        <script type="text/javascript" src="fastclick.js"></script>
+        <!-- <script type="text/javascript" src="https://c328740.ssl.cf1.rackcdn.com/mathjax/latest/MathJax.js?config=AM_HTMLorMML"></script> -->
+        <script type="text/javascript" src="parser.js"></script>
+        <script type="text/javascript" src="main.js"></script>
+        <link rel="stylesheet" type="text/css" href="main.css">
+    </head>
+    <body>
+        <div id="calculator">
+            <div class="display">
+                <div class="input">
+                    <div class="expression"></div>
+                    <!-- <div class="delete">&times;</div> -->
+                </div>
+                <div class="result"></div>
+                <div class="memory"></div>
+            </div>
+            <div class="buttons">
+                <div class="col">
+                    <div class="button ui more">&hellip;</div>
+                    <div class="button op pow">^</div>
+                    <div class="button func sqrt">&#8730;x</div>
+                    <div class="button func log">log</div>
+                    <div class="button const pi">&pi;</div>
+                </div>
+                <div class="col">
+                    <div class="button func paren">( )</div>
+                    <div class="button numeric seven">7</div>
+                    <div class="button numeric four">4</div>
+                    <div class="button numeric one">1</div>
+                    <div class="button numeric zero">0</div>
+                </div>
+                <div class="col">
+                    <div class="button func sin">sin</div>
+                    <div class="button numeric eight">8</div>
+                    <div class="button numeric five">5</div>
+                    <div class="button numeric two">2</div>
+                    <div class="button numeric decimal">.</div>
+                </div>
+                <div class="col">
+                    <div class="button"></div>
+                    <div class="button numeric nine">9</div>
+                    <div class="button numeric six">6</div>
+                    <div class="button numeric three">3</div>
+                    <div class="button numeric uminus">(-)</div>
+                </div>
+                <div class="col operations">
+                    <div class="button delete">del</div>
+                    <div class="button op divide">&divide;</div>
+                    <div class="button op multiply">&times;</div>
+                    <div class="button op subtract">&minus;</div>
+                    <div class="button op add">+</div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

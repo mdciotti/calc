@@ -1,0 +1,177 @@
+/*@import url(http://fonts.googleapis.com/css?family=Roboto:100);*/
+
+/* KNOWN ISSUES
+ * Chrome
+ *     https://code.google.com/p/chromium/issues/detail?id=261300
+ *     https://code.google.com/p/chromium/issues/detail?id=261298
+ */
+
+html {
+    height: 100%;
+}
+body {
+    background-color: #666666;
+    font-family: 'Helvetica Neue', 'Helvetica', sans-serif;
+    line-height: 1;
+    color: #666666;
+    -webkit-tap-highlight-color: transparent;
+    margin: 0;
+    overflow: hidden;
+    height: 100%;
+}
+#calculator {
+    width: 100%;
+    /*height: calc(100vw + 320px);*/
+    background-color: #f1f1f1;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+}
+#calculator .display {
+    background-color: #ffffff;
+    padding: 5vw;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+#calculator .display .input {
+    height: 10vw;
+    font-size: 5vw;
+    padding-bottom: 5vw;
+    border-bottom: thin solid #e1e1e1;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    display: flex;
+    align-items: stretch;
+    flex-direction: row;
+}
+#calculator .display .input .expression {
+    flex-grow: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+#calculator .display .input .delete {
+    width: 5vw;
+    cursor: pointer;
+    color: #e1e1e1;
+    font-weight: 100;
+    font-size: 6vw;
+    line-height: 5vw;
+}
+#calculator .display .result {
+    height: 124px;
+    padding: 2vw 0;
+    font-size: 16vw;
+    font-weight: 600;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    text-align: right;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    cursor: default;
+}
+#calculator .display .memory {
+    height: 10vw;
+    font-size: 5vw;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    overflow-x: auto;
+    overflow-y: visible;
+    white-space: nowrap;
+}
+#calculator .display .memory::-webkit-scrollbar {
+    display: none;
+}
+#calculator .display .memory .item {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    padding: 2vw 2vw 2vw 5vw;
+    border-radius: 5vw;
+    border: thin solid #e1e1e1;
+    display: inline-block;
+    cursor: default;
+    margin-right: 2vw;
+    height: 10vw;
+}
+#calculator .display .memory .item:hover {
+    background-color: #f1f1f1;
+}
+#calculator .display .memory .item .value {
+    /*max-width: 20vw;*/
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: inline-block;
+}
+#calculator .display .memory .item .delete {
+    cursor: pointer;
+    display: inline-block;
+    margin-left: 2vw;
+    color: #e1e1e1;
+    font-weight: 100;
+    font-size: 8vw;
+    line-height: 5vw;
+}
+#calculator .display .memory .item:hover .delete {
+    color: #666666;
+}
+#calculator .buttons {
+    height: 100vw;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: space-between;
+    font-weight: 100;
+    padding: 5vw;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+#calculator .buttons .col {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: space-between;
+    width: 20%;
+}
+#calculator .buttons .col .button {
+    text-align: center;
+    width: 18vw;
+    height: 18vw;
+    margin: 0 auto;
+    background-color: #e1e1e1;
+    font-size: 8vw;
+    border-radius: 9vw;
+    padding: 5vw;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    cursor: pointer;
+}
+#calculator .buttons .col .button:hover {
+}
+#calculator .buttons .col .button:active {
+    box-shadow: inset 0 0.8vw rgba(0,0,0,0.25);
+    background-color: #d1d1d1;
+    color: #f1f1f1;
+}
+#calculator .buttons .operations {
+    background-color: #EF4136;
+    color: #f1f1f1;
+    border-radius: 9vw;
+}
+#calculator .buttons .operations .button {
+    text-align: center;
+    border: 2vw solid #EF4136;
+    padding: 2.5vw;
+    background-color: #EF4136;
+    font-size: 9vw;
+}
+#calculator .buttons .operations .button:hover {
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    transform: scale(1.2);
+    font-size: 7.5vw;
+    line-height: 9vw;
+}
+#calculator .buttons .operations .button:active {
+    background-color: #C03027;
+}

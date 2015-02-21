@@ -1,0 +1,51 @@
+!!!
+html
+    head
+        meta(charset="utf-8")
+        title Calculator
+        meta(name="viewport", width="device-width", content="initial-scale=1.0, user-scalable=no")
+        script(type="text/javascript", src="/scripts/min/fastclick.min.js")
+        // script(type="text/javascript", src="https://c328740.ssl.cf1.rackcdn.com/mathjax/latest/MathJax.js?config=AM_HTMLorMML")
+        script(type="text/javascript", src="/scripts/min/parser.min.js")
+        script(type="text/javascript", src="/scripts/main.js")
+        link(rel="stylesheet", type="text/css", href="/styles/main.css")
+    body
+        #calculator
+            .display
+                .input
+                    .expression
+                    // .delete &times;
+                
+                .result
+                .memory
+            .buttons
+                .col
+                    .button.ui.more &hellip;
+                    .button.op.pow ^
+                    .button.func.sqrt &#8730;x
+                    .button.func.log log
+                    .button.const.pi &pi;
+                .col
+                    .button.func.paren ( )
+                    .button.numeric.seven 7
+                    .button.numeric.four 4
+                    .button.numeric.one 1
+                    .button.numeric.zero 0
+                .col
+                    .button.func.sin sin
+                    .button.numeric.eight 8
+                    .button.numeric.five 5
+                    .button.numeric.two 2
+                    .button.numeric.decimal .
+                .col
+                    .button
+                    .button.numeric.nine 9
+                    .button.numeric.six 6
+                    .button.numeric.three 3
+                    .button.numeric.uminus (-)
+                .col.operations
+                    .button.delete.del
+                    .button.op.divide &divide;
+                    .button.op.multiply &times;
+                    .button.op.subtract &minus;
+                    .button.op.add +
